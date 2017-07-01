@@ -2,17 +2,18 @@ import * as React from "react";
 
 import styled from "styled-components";
 
-
 interface QuoteAuthorProps {
-    className?: string,
+  className?: string;
 }
 
 class QuoteAuthor extends React.Component<QuoteAuthorProps, {}> {
-    render() {
-        return <div className={this.props.className}>
-            —{this.props.children}
-        </div>;
-    }
+  render() {
+    return (
+      <div className={this.props.className}>
+        —{this.props.children}
+      </div>
+    );
+  }
 }
 
 const StyledQuoteAuthor = styled(QuoteAuthor)`
@@ -22,6 +23,5 @@ const StyledQuoteAuthor = styled(QuoteAuthor)`
     text-align: left;
     text-indent: -32px;
 `;
-
 
 export default StyledQuoteAuthor;

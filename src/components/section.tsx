@@ -2,19 +2,20 @@ import * as React from "react";
 
 import styled from "styled-components";
 
-
 interface SectionProps {
-    // see https://github.com/Microsoft/TypeScript/issues/8588
-    children?: React.ReactChild,
-    className?: string,
+  // see https://github.com/Microsoft/TypeScript/issues/8588
+  children?: React.ReactChild;
+  className?: string;
 }
 
 class Section extends React.Component<SectionProps, {}> {
-    render() {
-        return <div className={this.props.className}>
-            {this.props.children}
-        </div>;
-    }
+  render() {
+    return (
+      <div className={this.props.className}>
+        {this.props.children}
+      </div>
+    );
+  }
 }
 
 const StyledSection = styled(Section)`
@@ -26,6 +27,5 @@ const StyledSection = styled(Section)`
     justify-items: center;
     align-items: center;
 `;
-
 
 export default StyledSection;
