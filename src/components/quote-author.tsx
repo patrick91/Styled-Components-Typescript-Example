@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 
 interface QuoteAuthorProps {
-    // see https://github.com/Microsoft/TypeScript/issues/8588
-    children?: React.ReactChild,
     className?: string,
 }
 
