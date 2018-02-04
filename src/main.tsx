@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { injectGlobal } from "styled-components";
+import { injectGlobal } from "./theme";
 
 import Section from "./components/section";
 import Quote from "./components/quote";

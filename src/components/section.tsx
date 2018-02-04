@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import styled from "styled-components";
+import styled from "../theme";
 
 interface SectionProps {
   // see https://github.com/Microsoft/TypeScript/issues/8588

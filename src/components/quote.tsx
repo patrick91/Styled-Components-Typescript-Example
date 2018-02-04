@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from "../theme";
 
 const Quote = styled.h1`
-  color: #e9e9eb;
+  color: ${props => props.theme.primaryColor};
   font: 400 36px/1.4 'cardo';
   font-style: italic;
   font-weight: normal;
