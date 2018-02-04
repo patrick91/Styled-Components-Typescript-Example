@@ -8,20 +8,16 @@ interface QuoteAuthorProps {
 
 class QuoteAuthor extends React.Component<QuoteAuthorProps, {}> {
   render() {
-    return (
-      <div className={this.props.className}>
-        —{this.props.children}
-      </div>
-    );
+    return <div className={this.props.className}>—{this.props.children}</div>;
   }
 }
 
 const StyledQuoteAuthor = styled(QuoteAuthor)`
-    color: #fff;
-    font: 400 36px/1.4 'cardo';
-    margin: 20px 0;
-    text-align: left;
-    text-indent: -32px;
+  color: #fff;
+  font: 400 36px/1.4 "cardo";
+  margin: 20px 0;
+  text-align: left;
+  text-indent: -32px;
 `;
 
 export default StyledQuoteAuthor;

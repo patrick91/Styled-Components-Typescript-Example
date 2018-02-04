@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import styled from "styled-components";
 import { injectGlobal } from "styled-components";
 
 import Section from "./components/section";
@@ -17,7 +16,7 @@ interface HelloProps {
   framework: string;
 }
 
-class Hello extends React.Component<HelloProps, undefined> {
+class Hello extends React.Component<HelloProps, {}> {
   render() {
     return (
       <Section>

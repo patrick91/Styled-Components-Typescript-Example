@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import styled from "styled-components";
 
 const Quote = styled.h1`
