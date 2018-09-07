@@ -7,4 +7,4 @@ Original styles from [Beautiful Web Type](https://github.com/ubuwaits/beautiful-
 
 ## How to run
 
-    yarn run webpack-dev-server
+    yarn start
