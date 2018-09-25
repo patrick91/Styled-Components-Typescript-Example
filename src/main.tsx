@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { injectGlobal } from "./theme";
+import { injectGlobal, ThemeProvider, theme } from "./theme";
 
 import Section from "./components/section";
 import Quote from "./components/quote";
@@ -36,6 +36,8 @@ class Hello extends React.Component<HelloProps, {}> {
 }
 
 ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
+  <ThemeProvider theme={theme}>
+    <Hello compiler="TypeScript" framework="React" />
+  </ThemeProvider>,
   document.getElementById("app")
 );
